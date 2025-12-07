@@ -4,13 +4,14 @@ load_dotenv()
 import uuid
 import streamlit as st
 from langchain_core.messages import HumanMessage
-from langgraph_backend import chatbot
+from langgraph_database_backend import chatbot, retrive_all_threads
 
 
 # ------------------------------ utility functions -----------------------------
 
 
 def generate_thread_id():
+    # Keep as uuid.UUID to match existing DB records
     return uuid.uuid4()
 
 
@@ -49,13 +50,29 @@ if "message_history" not in st.session_state:
 if "thread_id" not in st.session_state:
     st.session_state["thread_id"] = generate_thread_id()
 
+# 1) Load existing threads from SQLite once, on first run
 if "chat_threads" not in st.session_state:
-    # list of thread_ids that have at least one message
-    st.session_state["chat_threads"] = []
+    # list of thread_ids that have at least one message (from the DB)
+    st.session_state["chat_threads"] = retrive_all_threads()
 
+# 2) Build / restore titles for those threads from their first user message
 if "chat_titles" not in st.session_state:
-    # mapping: thread_id -> short title (first user message truncated)
     st.session_state["chat_titles"] = {}
+
+    for thread_id in st.session_state["chat_threads"]:
+        messages = load_conversation(thread_id)
+
+        title = "New Chat"
+        for msg in messages:
+            if isinstance(msg, HumanMessage):
+                clean = msg.content.replace("\n", " ").strip()
+                max_len = 25
+                if len(clean) > max_len:
+                    clean = clean[:max_len].rstrip() + "…"
+                title = clean or "New Chat"
+                break  # only first user message matters
+
+        st.session_state["chat_titles"][thread_id] = title
 
 
 # -------------------------- Sidebar UI -----------------------------------
