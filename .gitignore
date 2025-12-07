@@ -1,2 +1,8 @@
 .env
 .venv/
+chatbot.db
+chatbot.db-shm
+chatbot.db-wal
+chatbot.db
+chatbot.db-shm
+chatbot.db-wal
