@@ -5,10 +5,11 @@ import sqlite3
 import tempfile
 from typing import Annotated, Any, Dict, Optional, TypedDict
 
+import requests
 from dotenv import load_dotenv
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.tools import DuckDuckGoSearchRun
+from langchain_community.tools.tavily_search import TavilySearchResults
 from langchain_community.vectorstores import FAISS
 from langchain_core.messages import BaseMessage, SystemMessage
 from langchain_core.tools import tool
@@ -17,9 +18,25 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.graph import START, StateGraph
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
-import requests
 
+# Load .env locally; on Streamlit Cloud env vars come from Secrets
 load_dotenv()
+
+# Make sure keys exist (will raise early if missing)
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
+
+if not OPENAI_API_KEY:
+    raise RuntimeError(
+        "OPENAI_API_KEY is not set. "
+        "Set it in your .env (locally) and in Streamlit Secrets in the cloud."
+    )
+
+if not TAVILY_API_KEY:
+    raise RuntimeError(
+        "TAVILY_API_KEY is not set. "
+        "Set it in your .env (locally) and in Streamlit Secrets in the cloud."
+    )
 
 # -------------------
 # 1. LLM + embeddings
@@ -59,7 +76,9 @@ def ingest_pdf(file_bytes: bytes, thread_id: str, filename: Optional[str] = None
         docs = loader.load()
 
         splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000, chunk_overlap=200, separators=["\n\n", "\n", " ", ""]
+            chunk_size=1000,
+            chunk_overlap=200,
+            separators=["\n\n", "\n", " ", ""],
         )
         chunks = splitter.split_documents(docs)
 
@@ -91,8 +110,11 @@ def ingest_pdf(file_bytes: bytes, thread_id: str, filename: Optional[str] = None
 # -------------------
 # 3. Tools
 # -------------------
-search_tool = DuckDuckGoSearchRun(region="us-en")
 
+# Tavily internet search (requires TAVILY_API_KEY env var)
+search_tool = TavilySearchResults(
+    max_results=5,
+)
 
 @tool
 def calculator(first_num: float, second_num: float, operation: str) -> dict:
@@ -127,7 +149,7 @@ def calculator(first_num: float, second_num: float, operation: str) -> dict:
 @tool
 def get_stock_price(symbol: str) -> dict:
     """
-    Fetch latest stock price for a given symbol (e.g. 'AAPL', 'TSLA') 
+    Fetch latest stock price for a given symbol (e.g. 'AAPL', 'TSLA')
     using Alpha Vantage with API key in the URL.
     """
     url = (
