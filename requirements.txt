@@ -23,5 +23,6 @@ faiss-cpu
 pypdf
 duckduckgo-search
 tavily-python
+langchain-tavily
 # --- OpenAI client (used under the hood by langchain-openai) ---
 openai
