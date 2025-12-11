@@ -24,5 +24,10 @@ pypdf
 duckduckgo-search
 tavily-python
 langchain-tavily
+ddgs
+
 # --- OpenAI client (used under the hood by langchain-openai) ---
 openai
+
+# --- Pydantic (explicit, even though LangChain depends on it) ---
+pydantic
