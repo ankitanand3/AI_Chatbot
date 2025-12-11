@@ -10,26 +10,37 @@ from backend import (
     thread_document_metadata,
 )
 
-
 # =========================== Utilities ===========================
-def generate_thread_id():
-    return uuid.uuid4()
+def generate_thread_id() -> str:
+    """Always return a string thread_id for consistency."""
+    return str(uuid.uuid4())
 
 
 def reset_chat():
+    """
+    Start a fresh chat:
+    - Create a new active thread_id
+    - Clear the visible message history
+
+    NOTE: We DO NOT add this thread to chat_threads here.
+    It will only be registered as a past conversation
+    once the user sends their first message.
+    """
     thread_id = generate_thread_id()
     st.session_state["thread_id"] = thread_id
-    add_thread(thread_id)
     st.session_state["message_history"] = []
 
 
-def add_thread(thread_id):
+def add_thread(thread_id: str):
+    """Register a thread as a known conversation."""
     if thread_id not in st.session_state["chat_threads"]:
         st.session_state["chat_threads"].append(thread_id)
 
 
-def load_conversation(thread_id):
+def load_conversation(thread_id: str):
+    """Load messages for a given thread_id from the LangGraph checkpointer."""
     state = chatbot.get_state(config={"configurable": {"thread_id": thread_id}})
+    # If no messages yet, return an empty list
     return state.values.get("messages", [])
 
 
@@ -41,6 +52,7 @@ if "thread_id" not in st.session_state:
     st.session_state["thread_id"] = generate_thread_id()
 
 if "chat_threads" not in st.session_state:
+    # Only threads that have actually run through the graph
     st.session_state["chat_threads"] = retrieve_all_threads()
 
 if "chat_titles" not in st.session_state:
@@ -62,20 +74,28 @@ if "chat_titles" not in st.session_state:
         st.session_state["chat_titles"][thread_id] = title
 
 if "ingested_docs" not in st.session_state:
+    # {thread_id (str): {filename: summary_dict}}
     st.session_state["ingested_docs"] = {}
 
+# Current thread / docs
 thread_key = str(st.session_state["thread_id"])
 thread_docs = st.session_state["ingested_docs"].setdefault(thread_key, {})
-threads = st.session_state["chat_threads"][::-1]
+
+current_thread = st.session_state["thread_id"]
+# Past conversations should NOT include the current thread
+threads = [t for t in st.session_state["chat_threads"] if t != current_thread][::-1]
+
 selected_thread = None
 
 # ============================ Sidebar ============================
 st.sidebar.title("Ankit Chatbot")
 
+# NEW CHAT BUTTON
 if st.sidebar.button("New Chat", use_container_width=True):
     reset_chat()
     st.rerun()
 
+# PDF status / uploader
 if thread_docs:
     latest_doc = list(thread_docs.values())[-1]
     st.sidebar.success(
@@ -99,19 +119,24 @@ if uploaded_pdf:
             thread_docs[uploaded_pdf.name] = summary
             status_box.update(label="✅ PDF indexed", state="complete", expanded=False)
 
+# Past conversations list (excluding current thread)
 st.sidebar.subheader("Past conversations")
 if not threads:
     st.sidebar.write("No past conversations yet.")
 else:
     for thread_id in threads:
         label = st.session_state["chat_titles"].get(thread_id, "New Chat")
-        if st.sidebar.button(label, key=f"side-thread-{thread_id}", use_container_width=True):
+        if st.sidebar.button(
+            label,
+            key=f"side-thread-{thread_id}",
+            use_container_width=True,
+        ):
             selected_thread = thread_id
 
 # ============================ Main Layout ========================
 st.title("Ankit Chatbot")
 
-# Chat area
+# Chat area: render message history for the active thread
 for message in st.session_state["message_history"]:
     with st.chat_message(message["role"]):
         st.text(message["content"])
@@ -128,9 +153,14 @@ if user_input:
         max_len = 25
         if len(clean) > max_len:
             clean = clean[:max_len].rstrip() + "…"
-        st.session_state["chat_titles"][st.session_state["thread_id"]] = clean or "New Chat"
+        st.session_state["chat_titles"][st.session_state["thread_id"]] = (
+            clean or "New Chat"
+        )
 
-    st.session_state["message_history"].append({"role": "user", "content": user_input})
+    # Store user message in visible history
+    st.session_state["message_history"].append(
+        {"role": "user", "content": user_input}
+    )
     with st.chat_message("user"):
         st.text(user_input)
 
@@ -140,6 +170,7 @@ if user_input:
         "run_name": "chat_turn",
     }
 
+    # Stream assistant response
     with st.chat_message("assistant"):
         status_holder = {"box": None}
 
@@ -169,13 +200,17 @@ if user_input:
 
         if status_holder["box"] is not None:
             status_holder["box"].update(
-                label="✅ Tool finished", state="complete", expanded=False
+                label="✅ Tool finished",
+                state="complete",
+                expanded=False,
             )
 
+    # Save assistant message to visible history
     st.session_state["message_history"].append(
         {"role": "assistant", "content": ai_message}
     )
 
+    # Show doc meta if available
     doc_meta = thread_document_metadata(thread_key)
     if doc_meta:
         st.caption(
@@ -185,7 +220,9 @@ if user_input:
 
 st.divider()
 
+# ====================== Thread switching logic ====================
 if selected_thread:
+    # Switch active thread
     st.session_state["thread_id"] = selected_thread
     messages = load_conversation(selected_thread)
 

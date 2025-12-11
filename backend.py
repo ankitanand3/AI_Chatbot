@@ -28,7 +28,7 @@ llm = ChatOpenAI(model="gpt-4o-mini")
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
 # -------------------
-# 2. PDF retriever store (per thread)
+# 2. PDF retriever store (per thread, in-memory)
 # -------------------
 _THREAD_RETRIEVERS: Dict[str, Any] = {}
 _THREAD_METADATA: Dict[str, dict] = {}
@@ -59,13 +59,16 @@ def ingest_pdf(file_bytes: bytes, thread_id: str, filename: Optional[str] = None
         docs = loader.load()
 
         splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000, chunk_overlap=200, separators=["\n\n", "\n", " ", ""]
+            chunk_size=1000,
+            chunk_overlap=200,
+            separators=["\n\n", "\n", " ", ""],
         )
         chunks = splitter.split_documents(docs)
 
         vector_store = FAISS.from_documents(chunks, embeddings)
         retriever = vector_store.as_retriever(
-            search_type="similarity", search_kwargs={"k": 4}
+            search_type="similarity",
+            search_kwargs={"k": 4},
         )
 
         _THREAD_RETRIEVERS[str(thread_id)] = retriever
@@ -127,7 +130,7 @@ def calculator(first_num: float, second_num: float, operation: str) -> dict:
 @tool
 def get_stock_price(symbol: str) -> dict:
     """
-    Fetch latest stock price for a given symbol (e.g. 'AAPL', 'TSLA') 
+    Fetch latest stock price for a given symbol (e.g. 'AAPL', 'TSLA')
     using Alpha Vantage with API key in the URL.
     """
     url = (
@@ -222,6 +225,9 @@ chatbot = graph.compile(checkpointer=checkpointer)
 # 8. Helpers
 # -------------------
 def retrieve_all_threads():
+    """
+    Return a list of all thread_ids that have checkpoints (i.e. have had messages).
+    """
     all_threads = set()
     for checkpoint in checkpointer.list(None):
         all_threads.add(checkpoint.config["configurable"]["thread_id"])
