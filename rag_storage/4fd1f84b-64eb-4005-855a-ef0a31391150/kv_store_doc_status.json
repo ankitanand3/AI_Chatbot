@@ -1,0 +1,29 @@
+{
+  "doc-d0a13c8f4850670b13ca0766d790aec7": {
+    "status": "processed",
+    "chunks_count": 11,
+    "chunks_list": [
+      "chunk-8a3dd5bc04b2629130b663498786fd15",
+      "chunk-859eba6e3a1747cf7e2184920015ec73",
+      "chunk-bf1ad7f9904001279c2f93034c3e9504",
+      "chunk-8d14f0679f823989cfe0e5054b36d0eb",
+      "chunk-db9e26143a18b6ef5f0fa0cfaa1aef19",
+      "chunk-9c8758f6ad8692f8a5461fda146fac76",
+      "chunk-5d7a3e6585102ee8cc0cf6c202d48b39",
+      "chunk-720f695a6e857cc1b5904ac0609c8558",
+      "chunk-6ece784d88ded5e378d7e9ea822dd3c7",
+      "chunk-3932b202faa6ab035a849889faf465ff",
+      "chunk-ac027e0b5706b8829c1cc74ab49b9836"
+    ],
+    "content_summary": "Wireless MultiHop Q45 3-Axis \nVibration and Temperature Radios\nOriginal Instructions\np/n: 249891 Rev. C\n23-Sep-25\n© Banner Engineering Corp. All rights reserved. www.bannerengineering.com\n\nWireless MultiHop Q45 3-Axis Vibration and Temperature Radios...",
+    "content_length": 52289,
+    "created_at": "2025-12-11T05:37:43.311382+00:00",
+    "updated_at": "2025-12-11T05:38:50.586541+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251211_003743_990d8f4e",
+    "metadata": {
+      "processing_start_time": 1765431463,
+      "processing_end_time": 1765431530
+    }
+  }
+}

@@ -1,94 +1,173 @@
 from __future__ import annotations
 
+import asyncio
 import os
 import sqlite3
 import tempfile
 from typing import Annotated, Any, Dict, Optional, TypedDict
 
+import requests
 from dotenv import load_dotenv
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.tools import DuckDuckGoSearchRun
-from langchain_community.vectorstores import FAISS
 from langchain_core.messages import BaseMessage, SystemMessage
 from langchain_core.tools import tool
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_openai import ChatOpenAI
 from langgraph.checkpoint.sqlite import SqliteSaver
 from langgraph.graph import START, StateGraph
 from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
-import requests
+
+# --- LightRAG (simplified, without complex RAGAnything/MinerU) ---
+from lightrag import LightRAG, QueryParam
+from lightrag.llm.openai import openai_complete_if_cache, openai_embed
+from lightrag.utils import EmbeddingFunc
+from lightrag.kg.shared_storage import initialize_pipeline_status
 
 load_dotenv()
 
 # -------------------
-# 1. LLM + embeddings
+# 0. Global config
+# -------------------
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise RuntimeError("OPENAI_API_KEY environment variable is required for RAG-Anything")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+RAG_WORKING_ROOT = os.path.join(BASE_DIR, "rag_storage")
+os.makedirs(RAG_WORKING_ROOT, exist_ok=True)
+
+# -------------------
+# 1. LLM for main chat
 # -------------------
 llm = ChatOpenAI(model="gpt-4o-mini")
-embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 
 # -------------------
-# 2. PDF retriever store (per thread, in-memory)
+# 2. LightRAG setup (simplified, per-thread instances)
 # -------------------
-_THREAD_RETRIEVERS: Dict[str, Any] = {}
-_THREAD_METADATA: Dict[str, dict] = {}
+_THREAD_RAG: Dict[str, LightRAG] = {}
+_THREAD_METADATA: Dict[str, dict] = {}  # thread_id -> {"filename": str}
 
 
-def _get_retriever(thread_id: Optional[str]):
-    """Fetch the retriever for a thread if available."""
-    if thread_id and thread_id in _THREAD_RETRIEVERS:
-        return _THREAD_RETRIEVERS[thread_id]
-    return None
+def _build_lightrag(working_dir: str) -> LightRAG:
+    """Create a simplified LightRAG instance (no complex MinerU/GPU dependencies)."""
+    os.makedirs(working_dir, exist_ok=True)
+
+    async def llm_model_func(
+        prompt: str,
+        system_prompt: Optional[str] = None,
+        history_messages: Optional[list] = None,
+        **kwargs: Any,
+    ) -> str:
+        return await openai_complete_if_cache(
+            "gpt-4o-mini",
+            prompt,
+            system_prompt=system_prompt,
+            history_messages=history_messages or [],
+            api_key=OPENAI_API_KEY,
+            **kwargs,
+        )
+
+    embedding_func = EmbeddingFunc(
+        embedding_dim=3072,
+        max_token_size=8192,
+        func=lambda texts: openai_embed(
+            texts,
+            model="text-embedding-3-large",
+            api_key=OPENAI_API_KEY,
+        ),
+    )
+
+    rag = LightRAG(
+        working_dir=working_dir,
+        llm_model_func=llm_model_func,
+        embedding_func=embedding_func,
+    )
+
+    # Initialize storages and pipeline (required)
+    async def init():
+        await rag.initialize_storages()
+        await initialize_pipeline_status()
+
+    asyncio.run(init())
+
+    return rag
 
 
-def ingest_pdf(file_bytes: bytes, thread_id: str, filename: Optional[str] = None) -> dict:
+def _get_rag_for_thread(thread_id: str) -> LightRAG:
+    """Return (or lazily create) the LightRAG instance for a given thread."""
+    key = str(thread_id)
+    if key not in _THREAD_RAG:
+        thread_dir = os.path.join(RAG_WORKING_ROOT, key)
+        _THREAD_RAG[key] = _build_lightrag(thread_dir)
+    return _THREAD_RAG[key]
+
+
+def _extract_text_from_document(file_bytes: bytes, filename: str) -> str:
+    """Simple text extraction without complex dependencies."""
+    import io
+    from pypdf import PdfReader
+
+    file_ext = os.path.splitext(filename)[1].lower()
+
+    try:
+        if file_ext == '.pdf':
+            # Extract text from PDF
+            reader = PdfReader(io.BytesIO(file_bytes))
+            text_parts = []
+            for page in reader.pages:
+                text_parts.append(page.extract_text())
+            return "\n\n".join(text_parts)
+
+        elif file_ext in ['.txt', '.md', '.csv']:
+            # Direct text files
+            return file_bytes.decode('utf-8', errors='ignore')
+
+        else:
+            # Try to decode as text
+            return file_bytes.decode('utf-8', errors='ignore')
+
+    except Exception as e:
+        raise ValueError(f"Could not extract text from {filename}: {e}")
+
+
+def ingest_document(file_bytes: bytes, thread_id: str, filename: Optional[str] = None) -> dict:
     """
-    Build a FAISS retriever for the uploaded PDF and store it for the thread.
-
-    Returns a summary dict that can be surfaced in the UI.
+    Ingest document text using simplified LightRAG (fast, no GPU dependencies).
+    Supports: PDF, TXT, MD, CSV
     """
+    import logging
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(__name__)
+
     if not file_bytes:
         raise ValueError("No bytes received for ingestion.")
 
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp_file:
-        temp_file.write(file_bytes)
-        temp_path = temp_file.name
+    if not filename:
+        filename = f"uploaded-{thread_id}.bin"
 
     try:
-        loader = PyPDFLoader(temp_path)
-        docs = loader.load()
+        logger.info(f"Starting document ingestion: {filename}")
 
-        splitter = RecursiveCharacterTextSplitter(
-            chunk_size=1000,
-            chunk_overlap=200,
-            separators=["\n\n", "\n", " ", ""],
-        )
-        chunks = splitter.split_documents(docs)
+        # Extract text
+        logger.info(f"Extracting text from {filename}...")
+        text_content = _extract_text_from_document(file_bytes, filename)
+        logger.info(f"Extracted {len(text_content)} characters")
 
-        vector_store = FAISS.from_documents(chunks, embeddings)
-        retriever = vector_store.as_retriever(
-            search_type="similarity",
-            search_kwargs={"k": 4},
-        )
+        # Get RAG instance and insert
+        rag = _get_rag_for_thread(str(thread_id))
+        logger.info(f"Inserting into LightRAG knowledge base...")
+        asyncio.run(rag.ainsert(text_content))
+        logger.info(f"Document processing completed: {filename}")
 
-        _THREAD_RETRIEVERS[str(thread_id)] = retriever
-        _THREAD_METADATA[str(thread_id)] = {
-            "filename": filename or os.path.basename(temp_path),
-            "documents": len(docs),
-            "chunks": len(chunks),
-        }
+        meta = {"filename": filename, "chars": len(text_content)}
+        _THREAD_METADATA[str(thread_id)] = meta
+        return meta
 
-        return {
-            "filename": filename or os.path.basename(temp_path),
-            "documents": len(docs),
-            "chunks": len(chunks),
-        }
-    finally:
-        # The FAISS store keeps copies of the text, so the temp file is safe to remove.
-        try:
-            os.remove(temp_path)
-        except OSError:
-            pass
+    except Exception as e:
+        logger.error(f"Error processing document {filename}: {e}")
+        import traceback
+        traceback.print_exc()
+        raise
 
 
 # -------------------
@@ -142,28 +221,39 @@ def get_stock_price(symbol: str) -> dict:
 
 
 @tool
-def rag_tool(query: str, thread_id: Optional[str] = None) -> dict:
+def rag_tool(query: str, thread_id: Optional[str] = None, mode: str = "hybrid") -> dict:
     """
-    Retrieve relevant information from the uploaded PDF for this chat thread.
-    Always include the thread_id when calling this tool.
+    Retrieve relevant information from the RAG knowledge base for the given chat thread.
+
+    - Always include thread_id when calling this tool.
+    - mode: retrieval mode (e.g. 'hybrid', 'local', 'global', 'naive').
     """
-    retriever = _get_retriever(thread_id)
-    if retriever is None:
+    if thread_id is None:
         return {
-            "error": "No document indexed for this chat. Upload a PDF first.",
+            "error": "rag_tool requires a thread_id",
             "query": query,
         }
 
-    result = retriever.invoke(query)
-    context = [doc.page_content for doc in result]
-    metadata = [doc.metadata for doc in result]
-
-    return {
-        "query": query,
-        "context": context,
-        "metadata": metadata,
-        "source_file": _THREAD_METADATA.get(str(thread_id), {}).get("filename"),
-    }
+    try:
+        rag = _get_rag_for_thread(str(thread_id))
+        result = asyncio.run(
+            rag.aquery(
+                query,
+                param=QueryParam(mode=mode),
+            )
+        )
+        return {
+            "query": query,
+            "mode": mode,
+            "result": str(result),
+            "thread_id": str(thread_id),
+        }
+    except Exception as e:
+        return {
+            "error": f"RAG query failed: {e}",
+            "query": query,
+            "thread_id": str(thread_id),
+        }
 
 
 tools = [search_tool, get_stock_price, calculator, rag_tool]
@@ -180,18 +270,22 @@ class ChatState(TypedDict):
 # 5. Nodes
 # -------------------
 def chat_node(state: ChatState, config=None):
-    """LLM node that may answer or request a tool call."""
+    """LLM node that may answer directly or request a tool call."""
     thread_id = None
     if config and isinstance(config, dict):
         thread_id = config.get("configurable", {}).get("thread_id")
 
     system_message = SystemMessage(
         content=(
-            "You are a helpful assistant. For questions about the uploaded PDF, call "
-            "the `rag_tool` and include the thread_id "
-            f"`{thread_id}`. You can also use the web search, stock price, and "
-            "calculator tools when helpful. If no document is available, ask the user "
-            "to upload a PDF."
+            "You are a helpful assistant.\n\n"
+            "For questions about documents the user has uploaded in THIS chat, "
+            "use the `rag_tool`. Always pass the correct `thread_id` argument so "
+            "the right per-chat multimodal index is used. "
+            "The RAG system is powered by RAG-Anything, which can understand "
+            "text, images, tables, and equations inside the documents.\n\n"
+            "You can also use the web search, stock price, and calculator tools "
+            "when helpful. If no document is available for this chat, ask the "
+            "user to upload one."
         )
     )
 
@@ -225,9 +319,6 @@ chatbot = graph.compile(checkpointer=checkpointer)
 # 8. Helpers
 # -------------------
 def retrieve_all_threads():
-    """
-    Return a list of all thread_ids that have checkpoints (i.e. have had messages).
-    """
     all_threads = set()
     for checkpoint in checkpointer.list(None):
         all_threads.add(checkpoint.config["configurable"]["thread_id"])
@@ -235,7 +326,7 @@ def retrieve_all_threads():
 
 
 def thread_has_document(thread_id: str) -> bool:
-    return str(thread_id) in _THREAD_RETRIEVERS
+    return str(thread_id) in _THREAD_METADATA
 
 
 def thread_document_metadata(thread_id: str) -> dict:

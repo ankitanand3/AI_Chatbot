@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Python">
+  <data key="d0">Python</data>
+  <data key="d1">concept</data>
+  <data key="d2">Python is a programming language known for its simple syntax and versatility.</data>
+  <data key="d3">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431390</data>
+  <data key="d6"></data>
+</node>
+<node id="Sky">
+  <data key="d0">Sky</data>
+  <data key="d1">naturalobject</data>
+  <data key="d2">The sky is the region of the atmosphere and outer space visible from Earth, commonly perceived as blue during the day.</data>
+  <data key="d3">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431390</data>
+  <data key="d6"></data>
+</node>
+<node id="Water">
+  <data key="d0">Water</data>
+  <data key="d1">naturalobject</data>
+  <data key="d2">Water is a clear, colorless, odorless, and tasteless liquid that is essential for life and commonly described as wet.</data>
+  <data key="d3">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431390</data>
+  <data key="d6"></data>
+</node>
+<node id="Test Document">
+  <data key="d0">Test Document</data>
+  <data key="d1">content</data>
+  <data key="d2">The Test Document is a simple test file used to verify the functioning of the RAG ingestion process.</data>
+  <data key="d3">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431390</data>
+  <data key="d6"></data>
+</node>
+<node id="Section 1">
+  <data key="d0">Section 1</data>
+  <data key="d1">content</data>
+  <data key="d2">Section 1 of the Test Document presents basic facts about the natural world and programming.</data>
+  <data key="d3">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431390</data>
+  <data key="d6"></data>
+</node>
+<node id="Section 2">
+  <data key="d0">Section 2</data>
+  <data key="d1">content</data>
+  <data key="d2">Section 2 of the Test Document provides a list of steps related to testing.</data>
+  <data key="d3">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431390</data>
+  <data key="d6"></data>
+</node>
+<edge source="Sky" target="Water">
+  <data key="d7">1.0</data>
+  <data key="d8">Water is wet, an observation that can apply to the sky reflecting water vapor.</data>
+  <data key="d9">description,natural properties</data>
+  <data key="d10">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431392</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Test Document" target="Section 1">
+  <data key="d7">1.0</data>
+  <data key="d8">Section 1 is a part of the Test Document that contains basic facts.</data>
+  <data key="d9">content structure,documentation</data>
+  <data key="d10">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431392</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Test Document" target="Section 2">
+  <data key="d7">1.0</data>
+  <data key="d8">Section 2 is a part of the Test Document that outlines steps for testing.</data>
+  <data key="d9">content structure,documentation</data>
+  <data key="d10">chunk-7a87193517063fb7609a9d176dcbe8ac</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431393</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

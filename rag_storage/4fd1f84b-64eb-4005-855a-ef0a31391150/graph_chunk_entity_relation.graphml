@@ -1,0 +1,1609 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d13" for="edge" attr.name="truncate" attr.type="string"/>
+<key id="d12" for="edge" attr.name="created_at" attr.type="long"/>
+<key id="d11" for="edge" attr.name="file_path" attr.type="string"/>
+<key id="d10" for="edge" attr.name="source_id" attr.type="string"/>
+<key id="d9" for="edge" attr.name="keywords" attr.type="string"/>
+<key id="d8" for="edge" attr.name="description" attr.type="string"/>
+<key id="d7" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d6" for="node" attr.name="truncate" attr.type="string"/>
+<key id="d5" for="node" attr.name="created_at" attr.type="long"/>
+<key id="d4" for="node" attr.name="file_path" attr.type="string"/>
+<key id="d3" for="node" attr.name="source_id" attr.type="string"/>
+<key id="d2" for="node" attr.name="description" attr.type="string"/>
+<key id="d1" for="node" attr.name="entity_type" attr.type="string"/>
+<key id="d0" for="node" attr.name="entity_id" attr.type="string"/>
+<graph edgedefault="undirected"><node id="QM30 Housing">
+  <data key="d0">QM30 Housing</data>
+  <data key="d1">artifact</data>
+  <data key="d2">QM30 Housing refers to a type of bracket used for mounting sensors in various configurations to ensure accurate vibration sensing.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431511</data>
+  <data key="d6"></data>
+</node>
+<node id="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radio">
+  <data key="d0">Wireless MultiHop Q45 3-Axis Vibration and Temperature Radio</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The Wireless MultiHop Q45 3-Axis Vibration and Temperature Radio is a device designed for monitoring vibrations and temperature, with specific mounting options.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431511</data>
+  <data key="d6"></data>
+</node>
+<node id="Banner Engineering Corp.">
+  <data key="d0">Banner Engineering Corp.</data>
+  <data key="d1">organization</data>
+  <data key="d2">Banner Engineering Corp. is the company that holds rights to the Wireless MultiHop Q45 3-axis vibration and temperature radios and associated technologies.&lt;SEP&gt;Banner Engineering Corp. is the company that provides the installation instructions for the mounting options and the Wireless MultiHop Q45.&lt;SEP&gt;Banner Engineering Corp. is the company associated with the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios and the QM30VT3 Sensor.&lt;SEP&gt;Banner Engineering Corp. is the manufacturer of the Wireless MultiHop Q45 devices and all rights to the documentation are reserved.&lt;SEP&gt;Banner Engineering Corp. is the company responsible for manufacturing and providing specifications for the Wireless MultiHop Q45 series of products.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39&lt;SEP&gt;chunk-6ece784d88ded5e378d7e9ea822dd3c7&lt;SEP&gt;chunk-859eba6e3a1747cf7e2184920015ec73&lt;SEP&gt;chunk-9c8758f6ad8692f8a5461fda146fac76&lt;SEP&gt;chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431511</data>
+  <data key="d6"></data>
+</node>
+<node id="Loctite Depend 330">
+  <data key="d0">Loctite Depend 330</data>
+  <data key="d1">product</data>
+  <data key="d2">Loctite Depend 330 is an epoxy designed for accelerometer mounting, recommended for attaching brackets to motors.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431511</data>
+  <data key="d6"></data>
+</node>
+<node id="Mounting Options">
+  <data key="d0">Mounting Options</data>
+  <data key="d1">concept</data>
+  <data key="d2">Mounting Options encompasses various methods and brackets for securely attaching sensors to motors for optimal performance.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431511</data>
+  <data key="d6"></data>
+</node>
+<node id="Aluminum">
+  <data key="d0">Aluminum</data>
+  <data key="d1">material</data>
+  <data key="d2">Aluminum is a lightweight metal used in various brackets included in the mounting options for enhanced strength and durability.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431511</data>
+  <data key="d6"></data>
+</node>
+<node id="Stainless Steel">
+  <data key="d0">Stainless Steel</data>
+  <data key="d1">material</data>
+  <data key="d2">Stainless steel is a durable metal used in certain mounting options to provide rigidity and support for sensors.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431511</data>
+  <data key="d6"></data>
+</node>
+<node id="BWA-QM30-FTAL">
+  <data key="d0">BWA-QM30-FTAL</data>
+  <data key="d1">artifact</data>
+  <data key="d2">BWA-QM30-FTAL is an aluminum housing model included with the mounting options for vibration sensors, offering a rigid surface for high sensor accuracy.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431511</data>
+  <data key="d6"></data>
+</node>
+<node id="BWA-QM30-FSSSR">
+  <data key="d0">BWA-QM30-FSSSR</data>
+  <data key="d1">artifact</data>
+  <data key="d2">BWA-QM30-FSSSR is a robust quick-release bracket made of stainless steel, designed for secure mounting of sensors to motors.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="BWA-QM30-FSALR">
+  <data key="d0">BWA-QM30-FSALR</data>
+  <data key="d1">artifact</data>
+  <data key="d2">BWA-QM30-FSALR is a larger aluminum quick-release bracket that allows for rapid installation and removal of sensors compared to other mounting options.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="BWA-QM30-FTSS">
+  <data key="d0">BWA-QM30-FTSS</data>
+  <data key="d1">artifact</data>
+  <data key="d2">BWA-QM30-FTSS is a stainless steel housing model included with the mounting options for vibration sensors.</data>
+  <data key="d3">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="Banner Engineering Corp">
+  <data key="d0">Banner Engineering Corp</data>
+  <data key="d1">organization</data>
+  <data key="d2">Banner Engineering Corp is the company that produces the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios and provides related instructions.&lt;SEP&gt;Banner Engineering Corp is the organization responsible for the production of MultiHop Q45 radios and configuration software.&lt;SEP&gt;Banner Engineering Corp is the company that owns the rights to the Modbus Registers and Vibration Characteristics interface.&lt;SEP&gt;Banner Engineering Corp is a company that manufactures products, offering a one-year warranty against defects in material and workmanship.&lt;SEP&gt;Banner Engineering Corp is the company responsible for the products and technical documentation described.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504&lt;SEP&gt;chunk-db9e26143a18b6ef5f0fa0cfaa1aef19&lt;SEP&gt;chunk-ac027e0b5706b8829c1cc74ab49b9836&lt;SEP&gt;chunk-8a3dd5bc04b2629130b663498786fd15&lt;SEP&gt;chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="MultiHop Q45">
+  <data key="d0">MultiHop Q45</data>
+  <data key="d1">product</data>
+  <data key="d2">MultiHop Q45 is a series of wireless 3-axis vibration and temperature radios designed for various monitoring applications.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="BWA-BATT-011">
+  <data key="d0">BWA-BATT-011</data>
+  <data key="d1">artifact</data>
+  <data key="d2">BWA-BATT-011 is a replacement battery model recommended for use in the Q45 device.&lt;SEP&gt;BWA-BATT-011 is a 3.6V Lithium D cell battery designed for non-hazardous locations, with a capacity of 19000 mAH.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504&lt;SEP&gt;chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="Carbon-Fiber Spikes">
+  <data key="d0">Carbon-Fiber Spikes</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Carbon-fiber spikes are advanced sprinting shoes that provide enhanced speed and traction but are not specifically mentioned in the provided text.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="DXM Controller">
+  <data key="d0">DXM Controller</data>
+  <data key="d1">device</data>
+  <data key="d2">DXM Controller is a device used to connect to and configure MultiHop client radios.&lt;SEP&gt;The DXM Controller is a device to which the USB adapter cable can connect, although it is not required for connection.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504&lt;SEP&gt;chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="BWA-BATT-013">
+  <data key="d0">BWA-BATT-013</data>
+  <data key="d1">artifact</data>
+  <data key="d2">BWA-BATT-013 is a replacement battery model mentioned for installation in the Q45 device.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="Wireless MultiHop Q45 Configuration Instructions">
+  <data key="d0">Wireless MultiHop Q45 Configuration Instructions</data>
+  <data key="d1">content</data>
+  <data key="d2">Wireless MultiHop Q45 Configuration Instructions detail the procedures for battery installation, device binding, and network setup.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431512</data>
+  <data key="d6"></data>
+</node>
+<node id="3.6 V D-Cell Lithium Battery">
+  <data key="d0">3.6 V D-Cell Lithium Battery</data>
+  <data key="d1">artifact</data>
+  <data key="d2">3.6 V D-Cell Lithium Battery is a type of battery specified for use in the Q45 device.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="3.6 V Lithium Battery">
+  <data key="d0">3.6 V Lithium Battery</data>
+  <data key="d1">artifact</data>
+  <data key="d2">3.6 V Lithium Battery is a specific type of battery mentioned for installation and use in the Q45 device.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="MultiHop Configuration Software">
+  <data key="d0">MultiHop Configuration Software</data>
+  <data key="d1">content</data>
+  <data key="d2">MultiHop Configuration Software is an application used for viewing and configuring the MultiHop radio network.</data>
+  <data key="d3">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios">
+  <data key="d0">Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios</data>
+  <data key="d1">product</data>
+  <data key="d2">Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios are devices used for monitoring vibration and temperature in various machines, offering wireless data transmission and high accuracy.&lt;SEP&gt;Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios are devices designed for monitoring vibration and temperature with various models operating on different radio frequency bands.&lt;SEP&gt;The Wireless MultiHop Q45 is a wireless system designed to monitor vibrations and temperatures using advanced sensor technology.&lt;SEP&gt;The Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios are a type of equipment from Banner Engineering.&lt;SEP&gt;The Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios are devices designed for monitoring vibration and temperature with specific wireless communication capabilities.</data>
+  <data key="d3">chunk-6ece784d88ded5e378d7e9ea822dd3c7&lt;SEP&gt;chunk-ac027e0b5706b8829c1cc74ab49b9836&lt;SEP&gt;chunk-8a3dd5bc04b2629130b663498786fd15&lt;SEP&gt;chunk-859eba6e3a1747cf7e2184920015ec73&lt;SEP&gt;chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Q45VT3">
+  <data key="d0">Q45VT3</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Q45VT3 is a model of the MultiHop device, referred to in the specifications for its dimensions and battery life.&lt;SEP&gt;The Q45VT3 is a model of the Wireless MultiHop series that features capabilities for measuring three-axis vibration and temperature with specific battery life characteristics.</data>
+  <data key="d3">chunk-6ece784d88ded5e378d7e9ea822dd3c7&lt;SEP&gt;chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Q45VA3C">
+  <data key="d0">Q45VA3C</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Q45VA3C is another model of the MultiHop device, also mentioned for its specifications in the documentation.&lt;SEP&gt;The Q45VA3C is another model of the Wireless MultiHop series with details regarding battery life and operation in various conditions.</data>
+  <data key="d3">chunk-6ece784d88ded5e378d7e9ea822dd3c7&lt;SEP&gt;chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Innovation, Science and Economic Development Canada">
+  <data key="d0">Innovation, Science and Economic Development Canada</data>
+  <data key="d1">organization</data>
+  <data key="d2">Innovation, Science and Economic Development Canada is the governing body that provides the licensing framework for the radio transmitters used in the equipment.</data>
+  <data key="d3">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Specifications">
+  <data key="d0">Specifications</data>
+  <data key="d1">concept</data>
+  <data key="d2">Specifications refer to the detailed technical parameters and requirements for the Wireless MultiHop Q45 devices.</data>
+  <data key="d3">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Radio Frequency Energy">
+  <data key="d0">Radio Frequency Energy</data>
+  <data key="d1">concept</data>
+  <data key="d2">Radio Frequency Energy refers to the electromagnetic energy that can be generated, used, and radiated by devices like the Wireless MultiHop Q45, impacting radio communications.</data>
+  <data key="d3">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Harmful Interference">
+  <data key="d0">Harmful Interference</data>
+  <data key="d1">concept</data>
+  <data key="d2">Harmful Interference describes the negative impact that certain equipment operation may have on radio communications, as mentioned in compliance guidelines.</data>
+  <data key="d3">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Part 15 of the FCC Rules">
+  <data key="d0">Part 15 of the FCC Rules</data>
+  <data key="d1">concept</data>
+  <data key="d2">Part 15 of the FCC Rules outlines the regulations for unintentional radiators and is referenced for compliance by the equipment.</data>
+  <data key="d3">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Modbus Registers">
+  <data key="d0">Modbus Registers</data>
+  <data key="d1">concept</data>
+  <data key="d2">Modbus Registers refer to the designated addresses used for accessing specific data from the vibration sensor system.&lt;SEP&gt;Modbus Registers are communication protocols used for data acquisition and control in industrial environments, referenced in the document.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19&lt;SEP&gt;chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Vibration Characteristics">
+  <data key="d0">Vibration Characteristics</data>
+  <data key="d1">concept</data>
+  <data key="d2">Vibration Characteristics encompass various data measurements for analyzing the operational performance of machinery.&lt;SEP&gt;Vibration Characteristics refer to measurements and properties concerning the vibration data parameters in the provided data set.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19&lt;SEP&gt;chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Wireless MultiHop Q45">
+  <data key="d0">Wireless MultiHop Q45</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Wireless MultiHop Q45 is a type of communication device designed for monitoring vibration and temperature across multiple axes.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="X-Axis RMS Velocity">
+  <data key="d0">X-Axis RMS Velocity</data>
+  <data key="d1">data</data>
+  <data key="d2">X-Axis RMS Velocity is a measurement indicating the root mean square velocity along the X-axis in inches per second for a specified frequency range.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Y-Axis RMS Velocity">
+  <data key="d0">Y-Axis RMS Velocity</data>
+  <data key="d1">data</data>
+  <data key="d2">Y-Axis RMS Velocity is a measurement indicating the root mean square velocity along the Y-axis in inches per second for a specified frequency range.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Z-Axis RMS Velocity">
+  <data key="d0">Z-Axis RMS Velocity</data>
+  <data key="d1">data</data>
+  <data key="d2">Z-Axis RMS Velocity is a measurement indicating the root mean square velocity along the Z-axis in inches per second for a specified frequency range.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Temperature">
+  <data key="d0">Temperature</data>
+  <data key="d1">data</data>
+  <data key="d2">Temperature measures the thermal state in degrees Fahrenheit within the range specified in the Modbus Registers.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Modbus">
+  <data key="d0">Modbus</data>
+  <data key="d1">concept</data>
+  <data key="d2">Modbus is a communication protocol used for transmitting information between electronic devices in industrial applications.&lt;SEP&gt;Modbus is a communication protocol commonly used in industrial electronics for data acquisition and control.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19&lt;SEP&gt;chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431513</data>
+  <data key="d6"></data>
+</node>
+<node id="Holding Register">
+  <data key="d0">Holding Register</data>
+  <data key="d1">data</data>
+  <data key="d2">Holding Register refers to specific memory locations in the Modbus protocol used for storing data values.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="Frequency">
+  <data key="d0">Frequency</data>
+  <data key="d1">concept</data>
+  <data key="d2">Frequency is a measurement used to describe the number of occurrences of a repeating event per unit time, relevant in vibration and acceleration measurements.</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="Mexico">
+  <data key="d0">Mexico</data>
+  <data key="d1">location</data>
+  <data key="d2">Mexico is referenced as the location where specific operational conditions for Banner products apply, particularly regarding interference.</data>
+  <data key="d3">chunk-ac027e0b5706b8829c1cc74ab49b9836</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="David Alfaro Siqueiros 103, Piso 2, Valle Oriente, San Pedro Garza Garcia, Nuevo León, C.P. 66269">
+  <data key="d0">David Alfaro Siqueiros 103, Piso 2, Valle Oriente, San Pedro Garza Garcia, Nuevo León, C.P. 66269</data>
+  <data key="d1">location</data>
+  <data key="d2">This address is the location of the Mexican importer for Banner Engineering Corp.</data>
+  <data key="d3">chunk-ac027e0b5706b8829c1cc74ab49b9836</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="Banner">
+  <data key="d0">Banner</data>
+  <data key="d1">organization</data>
+  <data key="d2">Banner is a registered trademark of Banner Engineering Corp and is used to refer to the manufacturer.</data>
+  <data key="d3">chunk-ac027e0b5706b8829c1cc74ab49b9836</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="Patent Information">
+  <data key="d0">Patent Information</data>
+  <data key="d1">concept</data>
+  <data key="d2">Patent information outlines legal protections and rights pertaining to inventions associated with Banner Engineering Corp's products.</data>
+  <data key="d3">chunk-ac027e0b5706b8829c1cc74ab49b9836</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="QM30VT3 Modbus Sensor">
+  <data key="d0">QM30VT3 Modbus Sensor</data>
+  <data key="d1">equipment</data>
+  <data key="d2">The QM30VT3 Modbus Sensor is a compact sensor that connects to the Wireless MultiHop Q45 for seamless deployment and data transmission.</data>
+  <data key="d3">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="DXM Wireless Controller">
+  <data key="d0">DXM Wireless Controller</data>
+  <data key="d1">equipment</data>
+  <data key="d2">The DXM Wireless Controller is used to track and trend vibration and temperature characteristics in real-time, aiding in predictive maintenance.</data>
+  <data key="d3">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="3-Axis Vibration and Temperature Data">
+  <data key="d0">3-Axis Vibration and Temperature Data</data>
+  <data key="d1">data</data>
+  <data key="d2">3-Axis Vibration and Temperature Data refers to the information collected regarding vibration characteristics (radial, axial, tangential) and temperature from the sensors.</data>
+  <data key="d3">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="Battery Life">
+  <data key="d0">Battery Life</data>
+  <data key="d1">concept</data>
+  <data key="d2">Battery Life refers to the functionality duration of battery-powered devices, noted to last for 2+ years in the Wireless MultiHop system.</data>
+  <data key="d3">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="Original Instructions">
+  <data key="d0">Original Instructions</data>
+  <data key="d1">content</data>
+  <data key="d2">Original Instructions is the document provided by Banner Engineering Corp, detailing the usage and features of the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d3">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="DIP Switches">
+  <data key="d0">DIP Switches</data>
+  <data key="d1">equipment</data>
+  <data key="d2">DIP Switches are user-configurable components in the Wireless MultiHop system that allow customization of sample time and vibration characteristics.</data>
+  <data key="d3">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="Frequency Hopping Spread Spectrum (FHSS)">
+  <data key="d0">Frequency Hopping Spread Spectrum (FHSS)</data>
+  <data key="d1">method</data>
+  <data key="d2">Frequency Hopping Spread Spectrum (FHSS) is a communication method used in the Wireless MultiHop system to ensure reliable data delivery.</data>
+  <data key="d3">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="Frequency Hopping Spread Spectrum">
+  <data key="d0">Frequency Hopping Spread Spectrum</data>
+  <data key="d1">method</data>
+  <data key="d2">Frequency Hopping Spread Spectrum technology ensures reliable data delivery.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="D-Cell Battery Model BWA-BATT-011">
+  <data key="d0">D-Cell Battery Model BWA-BATT-011</data>
+  <data key="d1">artifact</data>
+  <data key="d2">D-Cell Battery Model BWA-BATT-011 is a recommended replacement battery for certain models of the Wireless MultiHop Q45.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="C-Cell Battery Model BWA-BATT-013">
+  <data key="d0">C-Cell Battery Model BWA-BATT-013</data>
+  <data key="d1">artifact</data>
+  <data key="d2">C-Cell Battery Model BWA-BATT-013 is a recommended replacement battery for the C-cell models of the Wireless MultiHop Q45.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="DX80DR2MQ45VT3-5QD">
+  <data key="d0">DX80DR2MQ45VT3-5QD</data>
+  <data key="d1">model</data>
+  <data key="d2">DX80DR2MQ45VT3-5QD is a specific model of the Wireless MultiHop Q45 operating on the 2.4 GHz ISM Band with certain input and output specifications.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="DX80DR9MQ45VT3-5QD">
+  <data key="d0">DX80DR9MQ45VT3-5QD</data>
+  <data key="d1">model</data>
+  <data key="d2">DX80DR9MQ45VT3-5QD is a specific model of the Wireless MultiHop Q45 operating on the 900 MHz ISM Band.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431514</data>
+  <data key="d6"></data>
+</node>
+<node id="DX80DR2MQ45VA3C">
+  <data key="d0">DX80DR2MQ45VA3C</data>
+  <data key="d1">model</data>
+  <data key="d2">DX80DR2MQ45VA3C is a model of Wireless MultiHop Q45 that integrates a 3-axis vibration and temperature sensor and operates on the 2.4 GHz ISM Band.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="DX80DR9MQ45VA3C">
+  <data key="d0">DX80DR9MQ45VA3C</data>
+  <data key="d1">model</data>
+  <data key="d2">DX80DR9MQ45VA3C is a model of Wireless MultiHop Q45 operating on the 900 MHz ISM Band.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="23-Sep-25">
+  <data key="d0">23-Sep-25</data>
+  <data key="d1">date</data>
+  <data key="d2">23-Sep-25 refers to the date mentioned in the document related to the Wireless MultiHop Q45 configuration instructions.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="QM30VT3">
+  <data key="d0">QM30VT3</data>
+  <data key="d1">model</data>
+  <data key="d2">QM30VT3 is referenced as a model associated with vibration/temperature sensors monitored by certain Wireless MultiHop Q45 models.</data>
+  <data key="d3">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="USB Adapter Cable">
+  <data key="d0">USB Adapter Cable</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The USB adapter cable serves to power radios and is designed with a wall plug for configuration tasks.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Wireless Reference Library">
+  <data key="d0">Wireless Reference Library</data>
+  <data key="d1">content</data>
+  <data key="d2">The Wireless Reference Library is an online repository where users can download the most recent software revisions.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Banner Engineering">
+  <data key="d0">Banner Engineering</data>
+  <data key="d1">organization</data>
+  <data key="d2">Banner Engineering is the company associated with the Wireless Reference Library and manufactures the radios mentioned.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Client Radio">
+  <data key="d0">Client Radio</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The Client Radio operates according to specific LED behaviors after powering up and is bound to other radios.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Server Radio">
+  <data key="d0">Server Radio</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The Server Radio follows designated LED behaviors and can operate in server or repeater modes.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="3-Axis Vibration and Temperature Radios">
+  <data key="d0">3-Axis Vibration and Temperature Radios</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The 3-axis vibration and temperature radios are monitoring solutions utilizing advanced MEMS sensors.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Digital MEMS Sensor">
+  <data key="d0">Digital MEMS Sensor</data>
+  <data key="d1">naturalobject</data>
+  <data key="d2">The digital MEMS sensor collects vibration data for monitoring, featuring ultra-low noise density across axes.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="FMax Settings">
+  <data key="d0">FMax Settings</data>
+  <data key="d1">concept</data>
+  <data key="d2">FMax settings allow users to adjust the frequency resolution of vibration and temperature measurements.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="High-Frequency Enveloping (HFE)">
+  <data key="d0">High-Frequency Enveloping (HFE)</data>
+  <data key="d1">method</data>
+  <data key="d2">High-frequency enveloping (HFE) is a measurement technique sensitive to high-frequency impacts and defects in machinery.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Configuration Instructions">
+  <data key="d0">Configuration Instructions</data>
+  <data key="d1">content</data>
+  <data key="d2">Configuration Instructions detail the processes for setting up the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d3">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="QM30VT3 Sensor">
+  <data key="d0">QM30VT3 Sensor</data>
+  <data key="d1">equipment</data>
+  <data key="d2">The QM30VT3 Sensor is specialized for measuring vibration and temperature data across three axes.</data>
+  <data key="d3">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Velocity">
+  <data key="d0">Velocity</data>
+  <data key="d1">concept</data>
+  <data key="d2">Velocity is a measurement used in vibration analysis to indicate the speed of a moving or vibrating mass.</data>
+  <data key="d3">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="High-Frequency Acceleration">
+  <data key="d0">High-Frequency Acceleration</data>
+  <data key="d1">concept</data>
+  <data key="d2">High-Frequency Acceleration is a metric used for early detection of faults in machinery by monitoring acceleration at high frequencies.</data>
+  <data key="d3">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Crest Factor">
+  <data key="d0">Crest Factor</data>
+  <data key="d1">concept</data>
+  <data key="d2">Crest Factor is a unitless ratio of Peak Acceleration to RMS Acceleration used to predict impacts and detect potential faults.</data>
+  <data key="d3">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Kurtosis">
+  <data key="d0">Kurtosis</data>
+  <data key="d1">concept</data>
+  <data key="d2">Kurtosis is a statistical measure that indicates the tailedness of a normal distribution of data.</data>
+  <data key="d3">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431515</data>
+  <data key="d6"></data>
+</node>
+<node id="Asset Run Flag">
+  <data key="d0">Asset Run Flag</data>
+  <data key="d1">concept</data>
+  <data key="d2">The Asset Run Flag determines if a measured asset is running or offline based on acceleration data.</data>
+  <data key="d3">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="Magnitude">
+  <data key="d0">Magnitude</data>
+  <data key="d1">concept</data>
+  <data key="d2">Magnitude provides a combined measurement of acceleration vectors from X, Y, and Z axes in vibration analysis.</data>
+  <data key="d3">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="3-Axis Vibration and Temperature Radio">
+  <data key="d0">3-Axis Vibration and Temperature Radio</data>
+  <data key="d1">equipment</data>
+  <data key="d2">3-Axis Vibration and Temperature Radio is a feature of the Wireless MultiHop Q45, designed for monitoring vibration and temperature in three dimensions.</data>
+  <data key="d3">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="QM30VT3-SS-MQP">
+  <data key="d0">QM30VT3-SS-MQP</data>
+  <data key="d1">artifact</data>
+  <data key="d2">QM30VT3-SS-MQP is a vibration and temperature sensor with RS-485 Modbus interface and three-axis vibration detection.</data>
+  <data key="d3">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="QM30VT3-MQP">
+  <data key="d0">QM30VT3-MQP</data>
+  <data key="d1">artifact</data>
+  <data key="d2">QM30VT3-MQP is a vibration and temperature sensor with RS-485 Modbus interface and three-axis vibration detection, featuring aluminum housing.</data>
+  <data key="d3">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="5-Pin A-Code Double-Ended M12 Female to M12 Male Cordsets">
+  <data key="d0">5-Pin A-Code Double-Ended M12 Female to M12 Male Cordsets</data>
+  <data key="d1">artifact</data>
+  <data key="d2">5-Pin A-Code Double-Ended M12 Female to M12 Male Cordsets are cable connectors available in various lengths for industrial applications.</data>
+  <data key="d3">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="Wireless MultiHop Q45 3-Axis Vibration And Temperature Radios">
+  <data key="d0">Wireless MultiHop Q45 3-Axis Vibration And Temperature Radios</data>
+  <data key="d1">artifact</data>
+  <data key="d2">Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios are advanced devices used for monitoring vibration and temperature.</data>
+  <data key="d3">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="Banner Engineering Corp Limited Warranty">
+  <data key="d0">Banner Engineering Corp Limited Warranty</data>
+  <data key="d1">concept</data>
+  <data key="d2">Banner Engineering Corp Limited Warranty covers products for defects in material and workmanship for one year following the date of shipment.</data>
+  <data key="d3">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="BWA-Q45VAC-FESS">
+  <data key="d0">BWA-Q45VAC-FESS</data>
+  <data key="d1">artifact</data>
+  <data key="d2">BWA-Q45VAC-FESS is a device that includes a base plate, screw retainers, mounting screws, a set screw, and a mounting disc, designed for mounting to surfaces.</data>
+  <data key="d3">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="MultiHop Q45 3-Axis Vibration And Temperature Radios">
+  <data key="d0">MultiHop Q45 3-Axis Vibration And Temperature Radios</data>
+  <data key="d1">artifact</data>
+  <data key="d2">MultiHop Q45 3-Axis Vibration And Temperature Radios are wireless devices that measure vibration and temperature with specific sampling intervals.</data>
+  <data key="d3">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="FCC Part 15 Class A">
+  <data key="d0">FCC Part 15 Class A</data>
+  <data key="d1">concept</data>
+  <data key="d2">FCC Part 15 Class A refers to regulations for intentional radiators established by the Federal Communications Commission that this equipment complies with.</data>
+  <data key="d3">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="Environmental Rating NEMA 6P, IP67">
+  <data key="d0">Environmental Rating NEMA 6P, IP67</data>
+  <data key="d1">concept</data>
+  <data key="d2">Environmental Rating NEMA 6P, IP67 signifies the device's ability to withstand specific environmental conditions including dust and water intrusion.</data>
+  <data key="d3">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="Shock Rating 30G">
+  <data key="d0">Shock Rating 30G</data>
+  <data key="d1">concept</data>
+  <data key="d2">Shock Rating 30G indicates the device's resilience to shock, able to endure impacts up to 30 times the force of gravity.</data>
+  <data key="d3">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="Vibration Sensor">
+  <data key="d0">Vibration Sensor</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The Vibration Sensor is a component of the MultiHop device that measures vibration levels and is described in detail with its specifications.</data>
+  <data key="d3">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="Temperature Sensor">
+  <data key="d0">Temperature Sensor</data>
+  <data key="d1">artifact</data>
+  <data key="d2">The Temperature Sensor is another component of the MultiHop device that measures temperature across a specified range.</data>
+  <data key="d3">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="Sure Cross®">
+  <data key="d0">Sure Cross®</data>
+  <data key="d1">concept</data>
+  <data key="d2">Sure Cross® is a branding associated with the wireless radios and related documentation referenced in the specifications.</data>
+  <data key="d3">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431516</data>
+  <data key="d6"></data>
+</node>
+<node id="X-Axis High-Frequency RMS Acceleration">
+  <data key="d0">X-Axis High-Frequency RMS Acceleration</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d2">X-Axis High-Frequency RMS Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431522</data>
+  <data key="d6"></data>
+</node>
+<node id="Y-Axis High-Frequency RMS Acceleration">
+  <data key="d0">Y-Axis High-Frequency RMS Acceleration</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d2">Y-Axis High-Frequency RMS Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431523</data>
+  <data key="d6"></data>
+</node>
+<node id="Z-Axis High-Frequency RMS Acceleration">
+  <data key="d0">Z-Axis High-Frequency RMS Acceleration</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d2">Z-Axis High-Frequency RMS Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431523</data>
+  <data key="d6"></data>
+</node>
+<node id="X-Axis Full Band Pk to Pk Acceleration">
+  <data key="d0">X-Axis Full Band Pk to Pk Acceleration</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d2">X-Axis Full Band Pk to Pk Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431524</data>
+  <data key="d6"></data>
+</node>
+<node id="Y-Axis Full Band Pk to Pk Acceleration">
+  <data key="d0">Y-Axis Full Band Pk to Pk Acceleration</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d2">Y-Axis Full Band Pk to Pk Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431525</data>
+  <data key="d6"></data>
+</node>
+<node id="Z-Axis Full Band Pk to Pk Acceleration">
+  <data key="d0">Z-Axis Full Band Pk to Pk Acceleration</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d2">Z-Axis Full Band Pk to Pk Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431525</data>
+  <data key="d6"></data>
+</node>
+<node id="Motor Run Flag">
+  <data key="d0">Motor Run Flag</data>
+  <data key="d3">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d2">Motor Run Flag indicates the operational status within the Vibration Characteristics data set.</data>
+  <data key="d1">UNKNOWN</data>
+  <data key="d4">unknown_source</data>
+  <data key="d5">1765431526</data>
+  <data key="d6"></data>
+</node>
+<edge source="QM30 Housing" target="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radio">
+  <data key="d7">1.0</data>
+  <data key="d8">QM30 Housing is intended for mounting the Wireless MultiHop Q45 Radio for optimal performance and accuracy.</data>
+  <data key="d9">installation,mounting method</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431517</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30 Housing" target="Banner Engineering Corp.">
+  <data key="d7">1.0</data>
+  <data key="d8">Banner Engineering Corp. provides the QM30 Housing as part of its product offerings for sensor installation.</data>
+  <data key="d9">installation guidance,product development</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431518</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30 Housing" target="Loctite Depend 330">
+  <data key="d7">1.0</data>
+  <data key="d8">Loctite Depend 330 is recommended for adhering brackets to the motor within the context of the QM30 Housing installation.</data>
+  <data key="d9">adhesive usage,installation</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431518</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30 Housing" target="Aluminum">
+  <data key="d7">1.0</data>
+  <data key="d8">Aluminum is used in the construction of the QM30 Housing, providing lightweight support and durability.</data>
+  <data key="d9">construction,material usage</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431519</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30 Housing" target="Stainless Steel">
+  <data key="d7">1.0</data>
+  <data key="d8">Stainless steel is also utilized in some variants of the QM30 Housing for enhanced rigidity and strength.</data>
+  <data key="d9">construction,material usage</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431519</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30 Housing" target="BWA-QM30-FTAL">
+  <data key="d7">1.0</data>
+  <data key="d8">BWA-QM30-FTAL is included with the aluminum housing model as part of the QM30 Housing mounting options.</data>
+  <data key="d9">component inclusion,mounting option</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431519</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30 Housing" target="BWA-QM30-FSSSR">
+  <data key="d7">1.0</data>
+  <data key="d8">BWA-QM30-FSSSR is included with the QM30 Housing options as a robust mounting solution.</data>
+  <data key="d9">component inclusion,mounting option</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30 Housing" target="BWA-QM30-FSALR">
+  <data key="d7">1.0</data>
+  <data key="d8">BWA-QM30-FSALR is part of the QM30 Housing as a quick-release bracket option for sensor installation.</data>
+  <data key="d9">component inclusion,mounting option</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30 Housing" target="BWA-QM30-FTSS">
+  <data key="d7">1.0</data>
+  <data key="d8">BWA-QM30-FTSS comes with the QM30 Housing options as a stainless steel mounting bracket.</data>
+  <data key="d9">component inclusion,mounting option</data>
+  <data key="d10">chunk-5d7a3e6585102ee8cc0cf6c202d48b39</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp." target="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios">
+  <data key="d7">3.0</data>
+  <data key="d8">The Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios are produced by Banner Engineering Corp.&lt;SEP&gt;Banner Engineering Corp. developed the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.&lt;SEP&gt;Banner Engineering Corp. manufactures the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d9">manufacture,manufacturing,product development,product offering,technology</data>
+  <data key="d10">chunk-6ece784d88ded5e378d7e9ea822dd3c7&lt;SEP&gt;chunk-859eba6e3a1747cf7e2184920015ec73&lt;SEP&gt;chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp." target="QM30VT3 Sensor">
+  <data key="d7">1.0</data>
+  <data key="d8">Banner Engineering Corp. produces the QM30VT3 Sensor, designed for vibration and temperature measurements.</data>
+  <data key="d9">product development,technology</data>
+  <data key="d10">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp." target="MultiHop Q45 3-Axis Vibration And Temperature Radios">
+  <data key="d7">1.0</data>
+  <data key="d8">Banner Engineering Corp. manufactures the MultiHop Q45 3-Axis Vibration And Temperature Radios.</data>
+  <data key="d9">manufacturing,production</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="MultiHop Q45">
+  <data key="d7">1.0</data>
+  <data key="d8">Banner Engineering Corp developed the MultiHop Q45 wireless radios for various applications.</data>
+  <data key="d9">organizational product,product development</data>
+  <data key="d10">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431518</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="Modbus Registers">
+  <data key="d7">1.0</data>
+  <data key="d8">Banner Engineering Corp documents the Modbus Registers as part of their proprietary technology.</data>
+  <data key="d9">product documentation,proprietary technology</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431521</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios">
+  <data key="d7">2.0</data>
+  <data key="d8">Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios are manufactured by Banner Engineering Corp.&lt;SEP&gt;Banner Engineering Corp manufactures the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d9">manufacturing,product,product offering</data>
+  <data key="d10">chunk-ac027e0b5706b8829c1cc74ab49b9836&lt;SEP&gt;chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431522</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="Mexico">
+  <data key="d7">1.0</data>
+  <data key="d8">Banner Engineering Corp's products operate under specific compliance conditions in Mexico.</data>
+  <data key="d9">compliance,operational conditions</data>
+  <data key="d10">chunk-ac027e0b5706b8829c1cc74ab49b9836</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431522</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="David Alfaro Siqueiros 103, Piso 2, Valle Oriente, San Pedro Garza Garcia, Nuevo León, C.P. 66269">
+  <data key="d7">1.0</data>
+  <data key="d8">The listed address is where the Mexican importer of Banner Engineering Corp is located.</data>
+  <data key="d9">business address,importer location</data>
+  <data key="d10">chunk-ac027e0b5706b8829c1cc74ab49b9836</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431523</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="Patent Information">
+  <data key="d7">1.0</data>
+  <data key="d8">Banner Engineering Corp holds patent information related to its products, ensuring legal protection of its inventions.</data>
+  <data key="d9">intellectual property,legal rights</data>
+  <data key="d10">chunk-ac027e0b5706b8829c1cc74ab49b9836</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431523</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="QM30VT3-SS-MQP">
+  <data key="d7">1.0</data>
+  <data key="d8">QM30VT3-SS-MQP is a product developed and manufactured by Banner Engineering Corp.</data>
+  <data key="d9">product manufacturer,technology provider</data>
+  <data key="d10">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="QM30VT3-MQP">
+  <data key="d7">1.0</data>
+  <data key="d8">QM30VT3-MQP is a product developed and manufactured by Banner Engineering Corp.</data>
+  <data key="d9">product manufacturer,technology provider</data>
+  <data key="d10">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="5-Pin A-Code Double-Ended M12 Female to M12 Male Cordsets">
+  <data key="d7">1.0</data>
+  <data key="d8">5-Pin A-Code Double-Ended M12 Female to M12 Male Cordsets are products developed and manufactured by Banner Engineering Corp.</data>
+  <data key="d9">product manufacturer,technology provider</data>
+  <data key="d10">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="BWA-BATT-011">
+  <data key="d7">1.0</data>
+  <data key="d8">BWA-BATT-011 is a product developed and manufactured by Banner Engineering Corp.</data>
+  <data key="d9">product manufacturer,technology provider</data>
+  <data key="d10">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Banner Engineering Corp" target="Wireless MultiHop Q45 3-Axis Vibration And Temperature Radios">
+  <data key="d7">1.0</data>
+  <data key="d8">Wireless MultiHop Q45 3-Axis Vibration And Temperature Radios are products developed and manufactured by Banner Engineering Corp.</data>
+  <data key="d9">product manufacturer,technology provider</data>
+  <data key="d10">chunk-3932b202faa6ab035a849889faf465ff</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45" target="BWA-BATT-011">
+  <data key="d7">1.0</data>
+  <data key="d8">The MultiHop Q45 requires the BWA-BATT-011 replacement battery for operation.</data>
+  <data key="d9">battery compatibility,product requirement</data>
+  <data key="d10">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431518</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45" target="BWA-BATT-013">
+  <data key="d7">1.0</data>
+  <data key="d8">The MultiHop Q45 requires the BWA-BATT-013 replacement battery for installation.</data>
+  <data key="d9">battery compatibility,product requirement</data>
+  <data key="d10">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431519</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45" target="DXM Controller">
+  <data key="d7">1.0</data>
+  <data key="d8">The MultiHop Q45 can be configured using the DXM Controller to access its functionalities.</data>
+  <data key="d9">configuration method,device interaction</data>
+  <data key="d10">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45" target="Wireless MultiHop Q45 Configuration Instructions">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop Q45 Configuration Instructions provide guidelines for installing and configuring the MultiHop Q45 radios.</data>
+  <data key="d9">configuration process,guidelines</data>
+  <data key="d10">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45" target="MultiHop Configuration Software">
+  <data key="d7">1.0</data>
+  <data key="d8">MultiHop Configuration Software is compatible with the MultiHop Q45 for network and device configuration.</data>
+  <data key="d9">device compatibility,software application</data>
+  <data key="d10">chunk-bf1ad7f9904001279c2f93034c3e9504</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="DXM Controller" target="USB Adapter Cable">
+  <data key="d7">1.0</data>
+  <data key="d8">The USB adapter cable facilitates a connection to the DXM Controller for powering radios.</data>
+  <data key="d9">configuration,connection</data>
+  <data key="d10">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Q45VT3">
+  <data key="d7">1.0</data>
+  <data key="d8">The Q45VT3 is a specific model within the Wireless MultiHop series, designed for vibration and temperature monitoring.</data>
+  <data key="d9">model relationship,product specification</data>
+  <data key="d10">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Q45VA3C">
+  <data key="d7">1.0</data>
+  <data key="d8">The Q45VA3C is another specific model within the Wireless MultiHop series, designed for similar functions.</data>
+  <data key="d9">model relationship,product specification</data>
+  <data key="d10">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431520</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Innovation, Science and Economic Development Canada">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop Q45 devices comply with licensing requirements set by Innovation, Science and Economic Development Canada.</data>
+  <data key="d9">licensing,regulation compliance</data>
+  <data key="d10">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431521</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Specifications">
+  <data key="d7">1.0</data>
+  <data key="d8">Specifications provide detailed technical information about the Wireless MultiHop Q45 series.</data>
+  <data key="d9">product information,technical details</data>
+  <data key="d10">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431521</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Radio Frequency Energy">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop Q45 radios can generate radio frequency energy during operation, raising concerns about potential interference.</data>
+  <data key="d9">device operation,energy generation</data>
+  <data key="d10">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431521</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Harmful Interference">
+  <data key="d7">1.0</data>
+  <data key="d8">The operation of the Wireless MultiHop Q45 radios may cause harmful interference according to the regulatory guidelines.</data>
+  <data key="d9">operational risk,regulatory compliance</data>
+  <data key="d10">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431522</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Part 15 of the FCC Rules">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop Q45 radios must comply with Part 15 of the FCC Rules regarding unintentional radiators.</data>
+  <data key="d9">device operation,regulatory compliance</data>
+  <data key="d10">chunk-6ece784d88ded5e378d7e9ea822dd3c7</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431522</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="QM30VT3 Modbus Sensor">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop Q45 connects with the QM30VT3 Modbus Sensor to provide vibration and temperature monitoring.</data>
+  <data key="d9">data connectivity,integration</data>
+  <data key="d10">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431523</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Battery Life">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop Q45 operates with a noted Battery Life of over 2 years, enhancing its practicality.</data>
+  <data key="d9">device functionality,operational benefits</data>
+  <data key="d10">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431524</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="DIP Switches">
+  <data key="d7">1.0</data>
+  <data key="d8">DIP Switches are used in the Wireless MultiHop Q45 for user configuration of sample time and vibration characteristics.</data>
+  <data key="d9">device configuration,user control</data>
+  <data key="d10">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431524</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="Frequency Hopping Spread Spectrum (FHSS)">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop Q45 utilizes Frequency Hopping Spread Spectrum (FHSS) technology to ensure reliable data delivery.</data>
+  <data key="d9">communication method,data reliability</data>
+  <data key="d10">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431524</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="DX80DR2MQ45VT3-5QD">
+  <data key="d7">1.0</data>
+  <data key="d8">The DX80DR2MQ45VT3-5QD is a specific model under the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d9">product category,specific model</data>
+  <data key="d10">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431524</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="DX80DR9MQ45VT3-5QD">
+  <data key="d7">1.0</data>
+  <data key="d8">The DX80DR9MQ45VT3-5QD is a specific model under the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d9">product category,specific model</data>
+  <data key="d10">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="DX80DR2MQ45VA3C">
+  <data key="d7">1.0</data>
+  <data key="d8">The DX80DR2MQ45VA3C is a specific model under the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d9">product category,specific model</data>
+  <data key="d10">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="DX80DR9MQ45VA3C">
+  <data key="d7">1.0</data>
+  <data key="d8">The DX80DR9MQ45VA3C is a specific model under the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d9">product category,specific model</data>
+  <data key="d10">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="QM30VT3">
+  <data key="d7">1.0</data>
+  <data key="d8">QC30VT3 sensor data can be monitored using the Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios.</data>
+  <data key="d9">monitoring capability,sensor integration</data>
+  <data key="d10">chunk-859eba6e3a1747cf7e2184920015ec73</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless MultiHop Q45 3-Axis Vibration and Temperature Radios" target="High-Frequency Acceleration">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop system utilizes high-frequency acceleration measurements for fault detection in machinery.</data>
+  <data key="d9">fault detection,monitoring</data>
+  <data key="d10">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Q45VT3" target="MultiHop Q45 3-Axis Vibration And Temperature Radios">
+  <data key="d7">1.0</data>
+  <data key="d8">The MultiHop radios include specifications for the Q45VT3 model regarding its dimensions and functionality.</data>
+  <data key="d9">model reference,specification</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431529</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Q45VA3C" target="MultiHop Q45 3-Axis Vibration And Temperature Radios">
+  <data key="d7">1.0</data>
+  <data key="d8">The MultiHop radios include specifications for the Q45VA3C model regarding its dimensions and functionality.</data>
+  <data key="d9">model reference,specification</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431529</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Modbus Registers" target="Digital MEMS Sensor">
+  <data key="d7">1.0</data>
+  <data key="d8">Modbus Registers are utilized for accessing data related to the Digital MEMS Sensor's performance.</data>
+  <data key="d9">data access,sensor communication</data>
+  <data key="d10">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Wireless MultiHop Q45">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless MultiHop Q45 is used to monitor the Vibration Characteristics across three axes.</data>
+  <data key="d9">measurement device,monitoring</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431521</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="X-Axis RMS Velocity">
+  <data key="d7">1.0</data>
+  <data key="d8">X-Axis RMS Velocity is a vital measurement parameter within the Vibration Characteristics data set.</data>
+  <data key="d9">measurement data,parameter</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431521</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Y-Axis RMS Velocity">
+  <data key="d7">1.0</data>
+  <data key="d8">Y-Axis RMS Velocity is a vital measurement parameter within the Vibration Characteristics data set.</data>
+  <data key="d9">measurement data,parameter</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431521</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Z-Axis RMS Velocity">
+  <data key="d7">1.0</data>
+  <data key="d8">Z-Axis RMS Velocity is a vital measurement parameter within the Vibration Characteristics data set.</data>
+  <data key="d9">measurement data,parameter</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431522</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Temperature">
+  <data key="d7">1.0</data>
+  <data key="d8">Temperature is another measured property included in the Vibration Characteristics data set.</data>
+  <data key="d9">data,measured property</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431522</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="X-Axis High-Frequency RMS Acceleration">
+  <data key="d7">1.0</data>
+  <data key="d8">X-Axis High-Frequency RMS Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d9">parameter,specific measurement</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431522</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Y-Axis High-Frequency RMS Acceleration">
+  <data key="d7">1.0</data>
+  <data key="d8">Y-Axis High-Frequency RMS Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d9">parameter,specific measurement</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431523</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Z-Axis High-Frequency RMS Acceleration">
+  <data key="d7">1.0</data>
+  <data key="d8">Z-Axis High-Frequency RMS Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d9">parameter,specific measurement</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431523</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="X-Axis Full Band Pk to Pk Acceleration">
+  <data key="d7">1.0</data>
+  <data key="d8">X-Axis Full Band Pk to Pk Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d9">parameter,specific measurement</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431524</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Y-Axis Full Band Pk to Pk Acceleration">
+  <data key="d7">1.0</data>
+  <data key="d8">Y-Axis Full Band Pk to Pk Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d9">parameter,specific measurement</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Z-Axis Full Band Pk to Pk Acceleration">
+  <data key="d7">1.0</data>
+  <data key="d8">Z-Axis Full Band Pk to Pk Acceleration is a precise measurement included in the Vibration Characteristics data set.</data>
+  <data key="d9">parameter,specific measurement</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Vibration Characteristics" target="Motor Run Flag">
+  <data key="d7">1.0</data>
+  <data key="d8">Motor Run Flag indicates the operational status within the Vibration Characteristics data set.</data>
+  <data key="d9">parameter,status indicator</data>
+  <data key="d10">chunk-db9e26143a18b6ef5f0fa0cfaa1aef19</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Modbus" target="QM30VT3 Sensor">
+  <data key="d7">1.0</data>
+  <data key="d8">The QM30VT3 Sensor uses the Modbus protocol for communication and data exchange.</data>
+  <data key="d9">communication,data exchange</data>
+  <data key="d10">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="DXM Wireless Controller" target="3-Axis Vibration and Temperature Data">
+  <data key="d7">1.0</data>
+  <data key="d8">The DXM Wireless Controller is used for monitoring 3-Axis Vibration and Temperature Data to assist in predicting maintenance needs.</data>
+  <data key="d9">monitoring,predictive maintenance</data>
+  <data key="d10">chunk-8a3dd5bc04b2629130b663498786fd15</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431523</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Wireless Reference Library" target="Banner Engineering">
+  <data key="d7">1.0</data>
+  <data key="d8">The Wireless Reference Library is an online resource managed by Banner Engineering for downloading software.</data>
+  <data key="d9">company association,online resource</data>
+  <data key="d10">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="Client Radio" target="Server Radio">
+  <data key="d7">1.0</data>
+  <data key="d8">Both the Client Radio and Server Radio exhibit specific LED behaviors and can interact within a network.</data>
+  <data key="d9">device interaction,operational modes</data>
+  <data key="d10">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="3-Axis Vibration and Temperature Radios" target="Digital MEMS Sensor">
+  <data key="d7">1.0</data>
+  <data key="d8">The 3-axis vibration and temperature radios utilize a digital MEMS sensor for effective data collection.</data>
+  <data key="d9">data collection,sensor integration</data>
+  <data key="d10">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="3-Axis Vibration and Temperature Radios" target="Configuration Instructions">
+  <data key="d7">1.0</data>
+  <data key="d8">Configuration Instructions provide important setup details for the 3-axis vibration and temperature radios.</data>
+  <data key="d9">product details,setup guidance</data>
+  <data key="d10">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="FMax Settings" target="High-Frequency Enveloping (HFE)">
+  <data key="d7">1.0</data>
+  <data key="d8">FMax settings impact the functionality of High-Frequency Enveloping (HFE) measurements for diagnosing machine faults.</data>
+  <data key="d9">fault diagnosis,measurement adjustment</data>
+  <data key="d10">chunk-8d14f0679f823989cfe0e5054b36d0eb</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431525</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30VT3 Sensor" target="Magnitude">
+  <data key="d7">1.0</data>
+  <data key="d8">The QM30VT3 Sensor measures magnitude as part of its functionality for vibration analysis.</data>
+  <data key="d9">measurement,vibration analysis</data>
+  <data key="d10">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30VT3 Sensor" target="Velocity">
+  <data key="d7">1.0</data>
+  <data key="d8">The QM30VT3 Sensor measures velocity in vibration analysis to help detect various types of faults.</data>
+  <data key="d9">measurement,vibration analysis</data>
+  <data key="d10">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30VT3 Sensor" target="Asset Run Flag">
+  <data key="d7">1.0</data>
+  <data key="d8">The Asset Run Flag is a functionality of the QM30VT3 Sensor that indicates the operational status of an asset.</data>
+  <data key="d9">functionality,status indication</data>
+  <data key="d10">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="QM30VT3 Sensor" target="3-Axis Vibration and Temperature Radio">
+  <data key="d7">1.0</data>
+  <data key="d8">The QM30VT3 Sensor is a key functional component of the 3-Axis Vibration and Temperature Radio for data acquisition.</data>
+  <data key="d9">data acquisition,functional component</data>
+  <data key="d10">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="High-Frequency Acceleration" target="Kurtosis">
+  <data key="d7">1.0</data>
+  <data key="d8">Kurtosis is used in conjunction with high-frequency acceleration data for statistical analysis and fault detection.</data>
+  <data key="d9">fault detection,statistical analysis</data>
+  <data key="d10">chunk-9c8758f6ad8692f8a5461fda146fac76</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431526</data>
+  <data key="d13"></data>
+</edge>
+<edge source="BWA-Q45VAC-FESS" target="MultiHop Q45 3-Axis Vibration And Temperature Radios">
+  <data key="d7">1.0</data>
+  <data key="d8">BWA-Q45VAC-FESS is utilized in conjunction with MultiHop Q45 devices for enhanced functionality in monitoring vibration and temperature.</data>
+  <data key="d9">functionality,integration</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45 3-Axis Vibration And Temperature Radios" target="FCC Part 15 Class A">
+  <data key="d7">1.0</data>
+  <data key="d8">MultiHop Q45 radios comply with FCC Part 15 Class A standards for intentional radiators.</data>
+  <data key="d9">compliance,regulation</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431527</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45 3-Axis Vibration And Temperature Radios" target="Environmental Rating NEMA 6P, IP67">
+  <data key="d7">1.0</data>
+  <data key="d8">MultiHop Q45 radios have an Environmental Rating of NEMA 6P, IP67, ensuring their durability in harsh conditions.</data>
+  <data key="d9">durability,environmental standards</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431528</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45 3-Axis Vibration And Temperature Radios" target="Shock Rating 30G">
+  <data key="d7">1.0</data>
+  <data key="d8">The MultiHop device has a Shock Rating of 30G, indicating its ability to resist significant impacts.</data>
+  <data key="d9">impact resistance,resilience</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431528</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45 3-Axis Vibration And Temperature Radios" target="Vibration Sensor">
+  <data key="d7">1.0</data>
+  <data key="d8">The MultiHop Q45 3-Axis Vibration And Temperature Radios include a Vibration Sensor for measuring vibration.</data>
+  <data key="d9">component,measurement</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431528</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45 3-Axis Vibration And Temperature Radios" target="Temperature Sensor">
+  <data key="d7">1.0</data>
+  <data key="d8">The MultiHop Q45 3-Axis Vibration And Temperature Radios include a Temperature Sensor for measuring temperature.</data>
+  <data key="d9">component,measurement</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431529</data>
+  <data key="d13"></data>
+</edge>
+<edge source="MultiHop Q45 3-Axis Vibration And Temperature Radios" target="Sure Cross®">
+  <data key="d7">1.0</data>
+  <data key="d8">Sure Cross® branding is associated with the MultiHop Q45 3-Axis Vibration And Temperature Radios.</data>
+  <data key="d9">branding,product association</data>
+  <data key="d10">chunk-720f695a6e857cc1b5904ac0609c8558</data>
+  <data key="d11">unknown_source</data>
+  <data key="d12">1765431530</data>
+  <data key="d13"></data>
+</edge>
+</graph></graphml>

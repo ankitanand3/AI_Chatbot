@@ -31,3 +31,10 @@ openai
 
 # --- Pydantic (explicit, even though LangChain depends on it) ---
 pydantic
+
+# --- RAG-Anything / Multimodal RAG ---
+raganything
+lightrag-hku
+Pillow
+reportlab
+unstructured  # For faster document parsing

@@ -1,0 +1,22 @@
+{
+  "doc-7a87193517063fb7609a9d176dcbe8ac": {
+    "relation_pairs": [
+      [
+        "Section 2",
+        "Test Document"
+      ],
+      [
+        "Sky",
+        "Water"
+      ],
+      [
+        "Section 1",
+        "Test Document"
+      ]
+    ],
+    "count": 3,
+    "create_time": 1765431393,
+    "update_time": 1765431393,
+    "_id": "doc-7a87193517063fb7609a9d176dcbe8ac"
+  }
+}

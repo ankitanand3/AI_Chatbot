@@ -1,0 +1,9 @@
+{
+  "doc-7a87193517063fb7609a9d176dcbe8ac": {
+    "content": "# Test Document\n\nThis is a simple test document to verify that the RAG ingestion works correctly.\n\n## Section 1\nHere are some facts:\n- The sky is blue\n- Water is wet\n- Python is a programming language\n\n## Section 2\nMore information about testing:\n1. First step\n2. Second step\n3. Third step",
+    "file_path": "unknown_source",
+    "create_time": 1765431382,
+    "update_time": 1765431382,
+    "_id": "doc-7a87193517063fb7609a9d176dcbe8ac"
+  }
+}
